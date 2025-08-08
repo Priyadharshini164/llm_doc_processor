@@ -8,4 +8,4 @@ sentence-transformers
 python-multipart
 PyPDF2
 faiss-cpu
-pinecone-client
+pinecone
