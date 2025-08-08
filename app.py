@@ -272,3 +272,10 @@ async def trigger_webhook(event: WebhookEvent, webhook_url: Optional[str] = None
         "sent": success,
         "webhook_url": webhook_url or WEBHOOK_URL
     }
+
+# ---------------------
+# ✅ Local Run Entry Point
+# ---------------------
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
